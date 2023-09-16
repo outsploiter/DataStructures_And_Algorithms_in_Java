@@ -9,13 +9,13 @@ public class ReverseArray {
         int i = 0;
         int j = arr.length-1;
         while (i<j){
-            swapindex(arr, i, j);
+            swapIndex(arr, i, j);
             i++;
             j--;
         }
         System.out.println(Arrays.toString(arr));
     }
-    private static void swapindex(int[] arr, int i1, int i2) {
+    private static void swapIndex(int[] arr, int i1, int i2) {
         int temp = arr[i1];
         arr[i1] = arr[i2];
         arr[i2] = temp;
