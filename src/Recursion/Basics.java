@@ -25,7 +25,7 @@ public class Basics {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-        rev(arr, i+1, j-1);
+        reverse(arr, i+1, j-1);
     }
 
     static boolean palindrome(int[] arr, int i, int j){
