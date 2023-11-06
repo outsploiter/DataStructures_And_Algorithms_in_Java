@@ -8,7 +8,7 @@ public class HashmapBased {
         // how to create hashmap
         HashMap<Integer, Integer> hashMap = new HashMap<>();
 
-        int[] arr = {1,2,2,3,3,4,4,4,4,1,2,3,4};
+        int[] arr = {1, 2, 2, 3, 3, 4, 4, 4, 4, 1, 2, 3, 4};
         // When you are asked multiple question/actions from the same array(0 to 9)
         // 1. what is the frequency of the numbers in the given array
         HashMap<Integer, Integer> arr_freq = find_frequency(arr);
@@ -33,7 +33,7 @@ public class HashmapBased {
 
     private static HashMap<Character, Integer> find_str_frequency(String str) {
         HashMap<Character, Integer> hash = new HashMap<>();
-        for(int i=0; i<str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             char key = str.charAt(i);
             int freq = 0;
             if (hash.containsKey(key)) freq = hash.get(key); // fetching from the map
